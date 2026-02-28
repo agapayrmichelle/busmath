@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Math Hub</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+header { background:#4CAF50; color:white; padding:20px 0; text-align:center; }
+nav { background:#333; }
+nav ul { list-style:none; display:flex; justify-content:center; margin:0; padding:0; flex-wrap:wrap; }
+nav ul li { margin:0 10px; }
+nav ul li a { color:white; text-decoration:none; padding:14px 10px; display:block; }
+nav ul li a:hover { background:#575757; border-radius:4px; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+section h2 { text-align:center; color:#333; }
+.content { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px; }
+.card { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); width:300px; text-align:center; }
+button { padding:8px 15px; margin-top:10px; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer; }
+button:hover { background:#45a049; }
+.answer { display:none; margin-top:10px; padding:10px; background:#f0f0f0; border-radius:4px; }
+input[type="text"], select { width:80%; padding:5px; margin-top:5px; }
+iframe { width:100%; height:200px; border:none; border-radius:8px; margin-top:10px; }
+footer { background:#333; color:white; text-align:center; padding:20px 0; margin-top:50px; }
+ul { text-align:left; }
+.tab { display:flex; flex-wrap:wrap; justify-content:center; gap:5px; margin-top:10px; }
+.letter { background:#4CAF50; color:white; padding:10px; border-radius:4px; cursor:pointer; margin:2px; user-select:none; }
+.dropzone { display:inline-block; width:30px; height:40px; margin:2px; border-bottom:2px solid #333; text-align:center; vertical-align:middle; font-weight:bold; line-height:40px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Business Math Hub</h1>
+<p>Learn Salary, Wages, Commission & More – Read, Watch, Play, Use!</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#read">Read</a></li>
+<li><a href="#watch">Watch</a></li>
+<li><a href="#play">Play</a></li>
+<li><a href="#use">Use</a></li>
+</ul>
+</nav>
+
+<!-- READ SECTION -->
+<section id="read">
+<h2>📖 Read</h2>
+<div class="content">
+
+<div class="card">
+<h3>Understanding Salary, Wages, Commission</h3>
+<p><strong>Salary:</strong> Fixed amount paid regularly (monthly/yearly). Example: ₱20,000/month.</p>
+<p><strong>Wages:</strong> Paid based on hours or days worked. Formula: <em>Wages = Hourly Rate × Hours Worked</em> or <em>Daily Wage × Days Worked</em></p>
+<p><strong>Commission:</strong> Payment based on sales. Formula: <em>Commission = Sales × Commission Rate</em></p>
+<p><strong>Tips:</strong> Always identify if pay is fixed (salary), time-based (wages), or performance-based (commission).</p>
+</div>
+
+<div class="card">
+<h3>External Definitions</h3>
+<p><strong>Salary vs Wages (monthly vs hourly/daily):</strong> 
+<a href="https://www.investopedia.com/articles/personal-finance/031115/salary-vs-hourly-how-benefits-laws-differ.asp" target="_blank">Investopedia – Salary vs. Hourly Pay</a></p>
+<!-- Removed JobStreet, LaborLaw.ph, and ASG Law links -->
+<p><strong>Commission:</strong> Payment based on sales. (<a href="https://www.investopedia.com/terms/c/commission.asp" target="_blank">Investopedia</a>)</p>
+</div>
+
+<div class="card">
+<h3>Formulas</h3>
+<ul>
+<li>Weekly Salary from Daily Wage = Daily Wage × Number of Days Worked in a Week</li>
+<li>Weekly Salary from Annual Salary = Annual Salary ÷ 52</li>
+<li>Monthly Salary from Daily Wage = Daily Wage × Number of Working Days in Month</li>
+<li>Monthly Salary from Annual Salary = Annual Salary ÷ 12</li>
+<li>Gross Income = Salary + Wages + Commission</li>
+<li>Net Pay = Gross Income – Taxes/Deductions</li>
+</ul>
+</div>
+
+
+</div>
+</section>
+
+<!-- WATCH SECTION -->
+<section id="watch">
+<h2>🎥 Watch</h2>
+<div class="content">
+
+<div class="card">
+<h3>Video Tutorial</h3>
+<iframe src="https://www.youtube.com/embed/IlJw0mACR9g?si=USCjKYqUczK62Nlp" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/hee5RYphJYY?si=gdtTs95kwvuMuFuY" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/JDQKCApdZiU?si=VfzKcmE3A1bz97tP" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/U0xJVrpjwQM?si=cul58WxgNJsNe4O8" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/I39FMdW5UVM?si=-m3SJA1ULV3X8nv_" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/3KGa1NKj0gI?si=8m0DfxyH3yiD6Wa3" allowfullscreen></iframe>
+</div>
+
+
+</div>
+</section>
+
+<!-- PLAY SECTION -->
+<section id="play">
+<h2>🎮 Play</h2>
+<div class="content">
+
+<!-- (PLAY SECTION UNCHANGED — FULL CONTENT INCLUDED) -->
+
+<div class="card">
+  <h3>Word Search Puzzle</h3>
+  <p>Find the key Business Math terms: SALARY, WAGES, COMMISSION, GROSS, NET</p>
+  <div id="wordSearchContainer" style="display:grid; grid-template-columns: repeat(12, 30px); gap:2px; justify-content:center; margin-top:10px;"></div>
+  <button onclick="checkWordSearch()">Check Answers</button>
+  <div id="wsFeedback" class="answer"></div>
+</div>
+
+<script>
+const wsWords = ["SALARY","WAGES","COMMISSION","GROSS","NET"];
+const gridSize = 12;
+let wsGrid = [];
+
+// Generate empty grid
+function generateWordSearch(){
+  const container = document.getElementById("wordSearchContainer");
+  container.innerHTML = "";
+  wsGrid = Array(gridSize).fill(0).map(()=>Array(gridSize).fill(""));
+
+  // Place words randomly in all directions
+  wsWords.forEach(word => {
+    let placed = false;
+    while(!placed){
+      const dir = Math.floor(Math.random()*3); // 0=horizontal, 1=vertical, 2=diagonal
+      const row = Math.floor(Math.random()*(gridSize - (dir===1?word.length:0) - (dir===2?word.length:0)));
+      const col = Math.floor(Math.random()*(gridSize - (dir===0?word.length:0) - (dir===2?word.length:0)));
+      let canPlace = true;
+
+      for(let i=0;i<word.length;i++){
+        const r = row + (dir===1||dir===2?i:0);
+        const c = col + (dir===0||dir===2?i:0);
+        if(wsGrid[r][c]!=="" && wsGrid[r][c]!==word[i]){ canPlace=false; break; }
+      }
+
+      if(canPlace){
+        for(let i=0;i<word.length;i++){
+          const r = row + (dir===1||dir===2?i:0);
+          const c = col + (dir===0||dir===2?i:0);
+          wsGrid[r][c] = word[i];
+        }
+        placed = true;
+      }
+    }
+  });
+
+  // Fill remaining empty cells with random letters
+  for(let r=0;r<gridSize;r++){
+    for(let c=0;c<gridSize;c++){
+      if(wsGrid[r][c]==="") wsGrid[r][c] = String.fromCharCode(65 + Math.floor(Math.random()*26));
+    }
+  }
+
+  // Render grid
+  for(let r=0;r<gridSize;r++){
+    for(let c=0;c<gridSize;c++){
+      const cell = document.createElement("div");
+      cell.textContent = wsGrid[r][c];
+      cell.style.width = "30px";
+      cell.style.height = "30px";
+      cell.style.textAlign = "center";
+      cell.style.lineHeight = "30px";
+      cell.style.border = "1px solid #ccc";
+      cell.style.cursor = "pointer";
+      cell.dataset.row = r;
+      cell.dataset.col = c;
+      cell.dataset.letter = wsGrid[r][c];
+      cell.style.userSelect = "none";
+      cell.addEventListener("click", ()=> {
+        if(cell.style.backgroundColor==="yellow") cell.style.backgroundColor="";
+        else cell.style.backgroundColor="yellow";
+      });
+      container.appendChild(cell);
+    }
+  }
+}
+
+// Check words horizontally, vertically, diagonally
+function checkWordSearch(){
+  const container = document.getElementById("wordSearchContainer");
+  let foundWords = [];
+
+  wsWords.forEach(word=>{
+    const wordLen = word.length;
+    let found = false;
+
+    // Horizontal
+    for(let r=0;r<gridSize;r++){
+      let rowString = "";
+      for(let c=0;c<gridSize;c++){
+        const cell = container.children[r*gridSize + c];
+        rowString += (cell.style.backgroundColor==="yellow") ? cell.textContent : " ";
+      }
+      if(rowString.includes(word)) found=true;
+    }
+
+    // Vertical
+    for(let c=0;c<gridSize;c++){
+      let colString = "";
+      for(let r=0;r<gridSize;r++){
+        const cell = container.children[r*gridSize + c];
+        colString += (cell.style.backgroundColor==="yellow") ? cell.textContent : " ";
+      }
+      if(colString.includes(word)) found=true;
+    }
+
+    // Diagonal (\)
+    for(let r=0;r<=gridSize-wordLen;r++){
+      for(let c=0;c<=gridSize-wordLen;c++){
+        let diagString = "";
+        for(let i=0;i<wordLen;i++){
+          const cell = container.children[(r+i)*gridSize + (c+i)];
+          diagString += (cell.style.backgroundColor==="yellow") ? cell.textContent : " ";
+        }
+        if(diagString===word) found=true;
+      }
+    }
+
+    // Diagonal (/)
+    for(let r=wordLen-1;r<gridSize;r++){
+      for(let c=0;c<=gridSize-wordLen;c++){
+        let diagString = "";
+        for(let i=0;i<wordLen;i++){
+          const cell = container.children[(r-i)*gridSize + (c+i)];
+          diagString += (cell.style.backgroundColor==="yellow") ? cell.textContent : " ";
+        }
+        if(diagString===word) found=true;
+      }
+    }
+
+    if(found) foundWords.push(word);
+  });
+
+  const feedback = document.getElementById("wsFeedback");
+  feedback.style.display="block";
+  if(foundWords.length === wsWords.length){
+    feedback.style.backgroundColor="#ccffcc";
+    feedback.textContent="✅ Congratulations! You found all words!";
+  } else {
+    feedback.style.backgroundColor="#ffcccc";
+    feedback.textContent=`❌ Words found: ${foundWords.join(", ")}. Keep looking for the others!`;
+  }
+}
+
+generateWordSearch();
+</script>
+
+
+
+
+<div class="card">
+<h3>Multiple Choice Quiz</h3>
+<p>Select correct formula for Net Pay:</p>
+<select id="quiz1">
+<option value="">--Choose--</option>
+<option value="wrong">Net Pay = Gross Income × Tax Rate</option>
+<option value="correct">Net Pay = Gross Income – Taxes/Deductions</option>
+<option value="wrong2">Net Pay = Daily Wage × 7</option>
+</select>
+<button onclick="checkMCQ('quiz1','feedback8')">Submit</button>
+<div id="feedback8" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Drag & Match</h3>
+<p>Match example to Salary, Wages, Commission:</p>
+<ul id="dragList" style="text-align:left; list-style:none; padding:0;">
+<li>Maria earns ₱20,000/month fixed</li>
+<li>Juan earns ₱500/day</li>
+<li>Salesperson earns 5% of ₱50,000</li>
+</ul>
+<select id="drop1"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<select id="drop2"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<select id="drop3"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<button onclick="checkDragDrop()">Check Answers</button>
+<div id="feedback9" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Random Salary Challenge</h3>
+<p>Click the button to generate a random daily wage problem:</p>
+<button onclick="randomProblem()">Generate Problem</button>
+<div id="randomProblem" class="answer"></div>
+<input type="text" id="randomAnswer" placeholder="Type answer">
+<button onclick="checkRandomAnswer()">Check Answer</button>
+<div id="feedback10" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Scrambled Letters Challenge</h3>
+<p>Click "Generate Problem" to start. Tap letters to place them in the slots below. You can undo letters by clicking them in the slots.</p>
+<button onclick="generateScrambleProblem()">Generate Problem</button>
+<div id="scrambleContainer" class="answer" style="display:block; margin-top:10px"></div>
+<button onclick="checkScrambleAnswer()">Check Answer</button>
+<div id="feedbackScramble" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Random Multiple Choice Challenge</h3>
+<p>Click "Generate Problem" to start. Select the correct answer from the options.</p>
+<button onclick="generateMCQProblem()">Generate Problem</button>
+<div id="mcqContainer" class="answer" style="display:block; margin-top:10px;"></div>
+<button onclick="checkMCQAnswer()">Check Answer</button>
+<div id="feedbackMCQ" class="answer"></div>
+</div>
+
+</div>
+</section>
+
+
+<!-- USE SECTION (Picture-Based Sentence Construction) -->
+<section id="use">
+<h2>💻 Use</h2>
+<div class="content">
+
+
+<!-- Scenario 1 -->
+<div class="card">
+  <h3>Make Your Own Word Problem</h3>
+  <p>Look at the pictures and write a word problem based on them:</p>
+  <div style="display:flex; gap:10px; justify-content:center; margin-top:10px;">
+    <img src="https://i.imgur.com/3t8hG3P.png" alt="Worker" width="80">
+    <img src="https://i.imgur.com/1ZQZ1Zx.png" alt="Money" width="80">
+    <img src="https://i.imgur.com/p3dG0qM.png" alt="Calendar" width="80">
+  </div>
+  <input type="text" id="sentence1" placeholder="Type your word problem here" style="margin-top:10px; width:90%;">
+  <button onclick="checkSentence('sentence1','feedbackPic1')" style="margin-top:10px;">Submit</button>
+  <div id="feedbackPic1" class="answer"></div>
+</div>
+
+<!-- Scenario 2 -->
+<div class="card">
+  <h3>Make Your Own Word Problem</h3>
+  <p>Look at the pictures and write a word problem based on them:</p>
+  <div style="display:flex; gap:10px; justify-content:center; margin-top:10px;">
+    <img src="https://i.imgur.com/K9G3F8D.png" alt="Sales" width="80">
+    <img src="https://i.imgur.com/8kz6M8X.png" alt="Calculator" width="80">
+    <img src="https://i.imgur.com/0q9Dk3B.png" alt="Interest" width="80">
+  </div>
+  <input type="text" id="sentence2" placeholder="Type your word problem here" style="margin-top:10px; width:90%;">
+  <button onclick="checkSentence('sentence2','feedbackPic2')" style="margin-top:10px;">Submit</button>
+  <div id="feedbackPic2" class="answer"></div>
+</div>
+
+</div>
+
+<script>
+// Function to check sentence for keywords
+function checkSentence(inputId, feedbackId){
+  const sentence = document.getElementById(inputId).value.toLowerCase();
+  const feedback = document.getElementById(feedbackId);
+  feedback.style.display = "block";
+
+  let correctKeywords = [];
+  if(inputId === "sentence1") correctKeywords = ["salary","wages","gross income","net income"];
+  if(inputId === "sentence2") correctKeywords = ["commission","sales","interest"];
+
+  let matched = correctKeywords.some(word => sentence.includes(word));
+
+  if(sentence === ""){
+    feedback.style.backgroundColor = "#ffcccc";
+    feedback.textContent = "❌ Please write a word problem.";
+  } else if(matched){
+    feedback.style.backgroundColor = "#ccffcc";
+    feedback.textContent = "✅ Good job! You included key concepts in your word problem.";
+  } else{
+    feedback.style.backgroundColor = "#ffcccc";
+    feedback.textContent = "❌ Try to include words related to the key business concepts shown in the pictures.";
+  }
+}
+</script>
+
+
+
+<!-- Make your own Payroll -->
+<div class="card" style="margin-bottom:30px;">
+  <h3>Make Your Own Payroll</h3>
+  <p>
+    Create a payroll file using a spreadsheet application such as Microsoft Excel or Google Sheets. 
+    Your payroll should contain the following columns in this exact order: <strong>EmployeeName, Salary, 
+    WorkingDays, DaysWorked, GrossIncome, Tax, SSS, PhilHealth, TotalDeduction, and NetPay</strong>. 
+    Enter the necessary information for an employee and compute the required values for the payroll. 
+    After completing the payroll, save your file as a <b>.CSV (Comma Separated Values)</b> file. 
+    Upload your completed payroll file below so the system can check whether your computations are correct.
+  </p>
+
+  <p><b>Choose your payroll file:</b></p>
+  <input type="file" id="fileInput" accept=".csv">
+
+  <br><br>
+  <button onclick="checkPayrollFile()">Check Payroll</button>
+
+  <p id="uploadFeedback"></p>
+</div>
+
+<script>
+function checkPayrollFile() {
+  let file = document.getElementById("fileInput").files[0];
+  if(!file){
+    document.getElementById("uploadFeedback").innerHTML = "Please upload a payroll file.";
+    return;
+  }
+
+  let reader = new FileReader();
+
+  reader.onload = function(e){
+    let text = e.target.result;
+    let rows = text.split("\n");
+    let data = rows[1].split(",");
+
+    let salary = parseFloat(data[1]);
+    let workingDays = parseFloat(data[2]);
+    let daysWorked = parseFloat(data[3]);
+    let gross = parseFloat(data[4]);
+    let tax = parseFloat(data[5]);
+    let sss = parseFloat(data[6]);
+    let philhealth = parseFloat(data[7]);
+    let totalDeduction = parseFloat(data[8]);
+    let net = parseFloat(data[9]);
+
+    let correctGross = (salary / workingDays) * daysWorked;
+    let correctDeduction = tax + sss + philhealth;
+    let correctNet = correctGross - correctDeduction;
+
+    let feedback = "";
+
+    if(Math.abs(gross - correctGross) < 0.01){
+      feedback += "✅ Gross Income correct<br>";
+    } else{
+      feedback += "❌ Gross Income incorrect<br>";
+    }
+
+    if(Math.abs(totalDeduction - correctDeduction) < 0.01){
+      feedback += "✅ Total Deduction correct<br>";
+    } else{
+      feedback += "❌ Total Deduction incorrect<br>";
+    }
+
+    if(Math.abs(net - correctNet) < 0.01){
+      feedback += "✅ Net Pay correct<br>";
+    } else{
+      feedback += "❌ Net Pay incorrect<br>";
+    }
+
+    document.getElementById("uploadFeedback").innerHTML = feedback;
+  };
+
+  reader.readAsText(file);
+}
+</script>
+</body>
+</html>
